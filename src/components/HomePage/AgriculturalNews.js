@@ -1,6 +1,6 @@
 import AgriNews from "../../assets/images/agri-news-1.png";
-import Ads from "./Partials/Ads";
-import LeaderBoard from "./Partials/LeaderBoard";
+import Ads from "../Partials/Ads";
+import LeaderBoard from "../Partials/LeaderBoard";
 
 const AgriculturalNews = () => {
   return (

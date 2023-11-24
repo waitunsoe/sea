@@ -1,4 +1,4 @@
-import LeaderBoardImg from "../../../assets/images/leader-board.png";
+import LeaderBoardImg from "../../assets/images/leader-board.png";
 
 const LeaderBoard = () => {
   return (

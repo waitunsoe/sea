@@ -1,6 +1,6 @@
 import LiveStockImg from "../../assets/images/live-stock-news-1.png";
-import Ads from "./Partials/Ads";
-import LeaderBoard from "./Partials/LeaderBoard";
+import Ads from "../Partials/Ads";
+import LeaderBoard from "../Partials/LeaderBoard";
 
 const LiveStock = () => {
   return (

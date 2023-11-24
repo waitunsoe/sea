@@ -1,5 +1,4 @@
-import AdsImg from "../../../assets/images/ads.png";
-
+import AdsImg from "../../assets/images/ads.png";
 
 const Ads = () => {
   return (
