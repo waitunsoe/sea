@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Header */
+.top-header{
+  background: #90C88F;
+  color: #FFFFFF;
+}
+.top-header .top-header-title{
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36.5426px;
+  line-height: 53px;
+}
+
+/* Navbar */
+.navbar .nav-link{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.navbar .nav-link:hover{
+  color: #4AA761;
+}
+.navbar .nav-link.active{
+  color: #4AA761 !important;
+}
+.navbar .dropdown-item.active{
+  color: #4AA761 !important;
+  background-color: #FFFFFF;
+}
+.navbar .dropdown-item:active{
+  background-color: #4AA761;
+}
+
+.offcanvas.offcanvas-end{
+    top: 170px;
+}
+
+
+/* ================= Latest News START================ */
+/* header START */
+.latest-news .title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37.65px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #000000; 
+}
+.latest-news .title h1{
+  border-bottom: 2px solid #4AA761;;
+}
+/* header END */
+
+/* main card START */
+.latest-news .card{
+  border-radius: 0;
+  overflow: hidden;
+}
+.latest-news .card .card-img{
+  overflow: hidden;
+  transition: all 1.5s ease-out;
+}
+.latest-news .card:hover .card-img{
+  transform: scale(1.1);
+}
+
+.latest-news .card-img-overlay{
+  background: linear-gradient(180deg, rgba(176, 176, 176, 0) 0%, #484848 100%);
+}
+
+.latest-news .card-title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 38px;
+}
+.latest-news .card-title a{
+  position: relative;
+  transition: 0.5s;
+}
+.latest-news .card:hover .card-title a{
+  color: #4AA761 !important;
+}
+.latest-news .card-title a::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #4AA761;
+  transition: 0.5s;
+  z-index: -1;
+}
+.latest-news .card:hover .card-title a::before{
+  width: 100%;
+  z-index: 1;
+}
+
+.latest-news .card-text{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23.04px;
+  line-height: 31px;
+}
+/* main card END */
+
+/* Side Cards START */
+.latest-news .side-cards .card-title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23.04px;
+  line-height: 31px;
+}
+.latest-news .side-cards .card-text{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.0774px;
+  line-height: 16px;
+}
+/* Side Cards END */
+/* ================= Latest News END================ */
+
+
+/*======= TOP-HEADER START =======*/
+@media screen and (min-width: 992px) and (max-width: 1399.98px) {
+  .top-header .top-header-title{
+    font-size: 30.5426px;
+  }
+  .navbar .nav-link{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .offcanvas.offcanvas-end{
+    top: 107px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .top-header .top-header-title{
+    font-size: 19.5426px;
+  }
+  .offcanvas.offcanvas-end{
+    top: 141px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .top-header .top-header-title{
+    font-size: 29.5426px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .top-header .top-header-title{
+    font-size: 16.5426px;
+  }
+  .top-header .top-header-others .language-select,
+  .top-header .top-header-others .login-box{
+    margin: 0 !important;
+  }
+  .offcanvas.offcanvas-end {
+    top: 117px;
+  }
+}
+/*====== TOP-HEADER END ======*/
+
+/*======= Latest News START========*/
+/* main-card */
+@media screen and (max-width: 576px){
+  .latest-news .card-title{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .latest-news .card-text{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 350px){
+  .latest-news .card-title{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .latest-news .card-text{
+    font-size: 12px;
+  }
+}
+/* side-cards */
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .latest-news .side-cards .card-title{
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .latest-news .side-cards .card-title{
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .latest-news .side-cards .card-text{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .latest-news .side-cards .card-text{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.04px;
+    line-height: 31px;
+  }
+  .latest-news .side-cards .card-title{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 576px){
+  .latest-news .side-cards .card-title{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .latest-news .side-cards .card-text{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 350px){
+  .latest-news .side-cards .card-title{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .latest-news .side-cards .card-text{
+    font-size: 12px;
+  }
+}
+
+/* ======================= Agriculture News START ========================== */
+/* header START */
+.agriculture-news .title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37.65px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #000000; 
+}
+.agriculture-news .title h1{
+  border-bottom: 2px solid #4AA761;;
+}
+/* header END */
+
+.agriculture-news .card{
+  overflow: hidden;
+  border-radius: 0;
+}
+
+/* big news card */
+.agriculture-news .big-post-card .card-img-top{
+  overflow: hidden;
+  border-radius: 0 !important;
+  transition: all 0.5s ease-out;
+}
+.agriculture-news .big-post-card .card:hover .card-img-top{
+  transform: scale(1.03);
+}
+.agriculture-news .big-post-card .card-title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27.65px;
+  line-height: 43px;
+}
+.agriculture-news .big-post-card .card-title a{
+  color: #000000;
+  position: relative;
+  transition: 0.5s;
+}
+.agriculture-news .big-post-card .card-title a::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #4AA761;
+  transition: 0.5s;
+  z-index: -1;
+}
+.agriculture-news .big-post-card .card:hover .card-title a{
+  color: #4AA761 !important;
+}
+.agriculture-news .big-post-card .card:hover .card-title a::before{
+  width: 100%;
+  z-index: 1;
+}
+.agriculture-news .big-post-card .card-text{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20.04px;
+  line-height: 27px;
+  color: #000000;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .agriculture-news .big-post-card .card-title{
+    font-size: 20.65px;
+    line-height: 30px;
+  }
+  .agriculture-news .big-post-card .card-text{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 456px){
+  .agriculture-news .big-post-card .card-title{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .agriculture-news .big-post-card .card-text{
+    font-size: 14px;
+  }
+}
+
+/* small news cards */
+.agriculture-news .small-post-card .card-title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.04px;
+  line-height: 22px;
+}
+.agriculture-news .small-post-card a{
+  color: #000000;
+  text-decoration: none;
+  transition: .3s;
+}
+.agriculture-news .small-post-card .card:hover a{
+  color: #4AA761;
+}
+
+@media screen and (max-width: 767.98px) {
+  .agriculture-news .small-post-card .card{
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .agriculture-news .small-post-card .card{
+    margin-top: 0px !important;
+    margin-bottom: 2rem !important;
+  }
+}
+/* ===================== Agriculture News END ========================*/
+
+/* ===================== Upcoming Event START ========================*/
+.upcoming-event .title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #4AA761;
+}
+/* ===================== Upcoming Event END ========================*/
+
+/* ===================== Magazine START ========================*/
+.magazine{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, rgba(0, 0, 0, 0.77) 100%) fixed center no-repeat,
+              url("../images/magazine-bg.png") fixed center no-repeat;
+  background-size: cover;
+}
+.magazine .title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38.65px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.magazine .btn-warning{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+  background: rgba(250, 240, 2, 0.77);
+}
+.magazine .magazine-book img{
+  transition: .3s;
+}
+.magazine .magazine-book a:hover img{
+  transform: translateY(-16px) scale(.99);
+}
+/* ===================== Magazine END ========================*/
+
+
+
+/* ======================= Agriculture News START ========================== */
+/* header START */
+.agriculture-news .title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37.65px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #000000; 
+}
+.agriculture-news .title h1{
+  border-bottom: 2px solid #4AA761;;
+}
+/* header END */
+
+.agriculture-news .card{
+  overflow: hidden;
+  border-radius: 0;
+}
+
+/* big news card */
+.agriculture-news .big-post-card .card-img-top{
+  overflow: hidden;
+  border-radius: 0 !important;
+  transition: all 0.5s ease-out;
+}
+.agriculture-news .big-post-card .card:hover .card-img-top{
+  transform: scale(1.03);
+}
+.agriculture-news .big-post-card .card-title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+.agriculture-news .big-post-card .card-title a{
+  color: #000000;
+  position: relative;
+  transition: 0.5s;
+}
+.agriculture-news .big-post-card .card-title a::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #4AA761;
+  transition: 0.5s;
+  z-index: -1;
+}
+.agriculture-news .big-post-card .card:hover .card-title a{
+  color: #4AA761 !important;
+}
+.agriculture-news .big-post-card .card:hover .card-title a::before{
+  width: 100%;
+  z-index: 1;
+}
+.agriculture-news .big-post-card .upload-time-box{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 31px;
+  color: #605C5C;
+  background: #D9D9D9;
+}
+
+@media screen and (max-width: 1400px) {
+  .agriculture-news .big-post-card .card-title{
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .agriculture-news .big-post-card .card-title{
+    font-size: 27px;
+    line-height: 40px;
+  }
+  .agriculture-news .big-post-card .upload-time-box{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .agriculture-news  article{
+    margin-bottom: 65px;
+  }
+  .agriculture-news .big-post-card .upload-time-box{
+    font-size: 10px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 767.98px){
+  .agriculture-news .big-post-card .card-title {
+    font-size: 25px;    
+    line-height: 30px;
+  }
+}
+/* small news cards */
+.agriculture-news .small-post-card article{
+  margin-bottom: 65px;
+}
+.agriculture-news .small-post-card .card-title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.agriculture-news .small-post-card a{
+  color: #000000;
+  text-decoration: none;
+  transition: .3s;
+}
+.agriculture-news .small-post-card .card:hover a{
+  color: #4AA761;
+}
+.agriculture-news .small-post-card .upload-time-box{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.47613px;
+  line-height: 13px;
+  color: #605C5C;
+  background: #D9D9D9;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .agriculture-news .small-post-card article {
+    margin-bottom: 56px;
+  }
+  .agriculture-news .small-post-card .card-title{
+    font-size: 16px;
+  } 
+}
+@media screen and (max-width: 1199.98px){
+  .agriculture-news .small-post-card article {
+    margin-bottom: 68px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .agriculture-news .small-post-card article{
+    margin-bottom: 82px;
+  }
+  .agriculture-news .small-post-card .card-title{
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .agriculture-news .small-post-card .upload-time-box {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 767.98px){
+  .agriculture-news .small-post-card .card {
+    padding-bottom: 0rem;
+  }
+  .agriculture-news .small-post-card .card-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .agriculture-news .small-post-card .card-body{
+    padding: 0;
+  }
+  .agriculture-news .small-post-card .upload-time-box {
+    font-size: 10px;
+    line-height: 30px;
+  }
+}
+
+/* Agri related post */
+.agri-related-post .title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32.3679px;
+  line-height: 44px;
+  color: #000000;
+}
+
+/* more about agri news */
+.agri-related-post .agri-news-more-about .card{
+  margin-bottom: 50px;
+}
+.agri-related-post .agri-news-more-about .card-title a{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #605C5C;
+  transition: .3s;
+}
+.agri-related-post .agri-news-more-about .card:hover .card-title a{
+  color: #4AA761 !important;
+}
+.agri-related-post .agri-news-more-about .upload-time-box{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #605C5C;
+  background: #D9D9D9;
+}
+
+@media screen and (max-width: 320px){
+  .agri-related-post .title{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .agri-related-post .agri-news-more-about .card-title a {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .agri-related-post .agri-news-more-about .upload-time-box {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 767.98px){
+  .agri-related-post .agri-news-more-about .card-title a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 600px){
+.agri-related-post .agri-news-more-about .card-title a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576.98px){
+  .agri-related-post .agri-news-more-about .card-title a {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+/* most read agri news */
+.agri-news-most-read{
+  background: rgba(217, 217, 217, 0.4);
+  padding: 40px;
+}
+.agri-news-most-read .card{
+  margin-bottom: 25px;
+}
+.agri-news-most-read .card-title{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.2488px;
+  line-height: 26px;
+}
+.agri-news-most-read .card-title a{
+  text-decoration: none;
+  color: #000000;
+  transition: .3s;
+}
+.agri-news-most-read .card:hover .card-title a{
+  color: #4AA761;
+}
+.agri-news-most-read .upload-time-box{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 10px;
+  color: #605C5C;
+  background: rgba(217, 217, 217, 0.4);
+}
+
+.pagination{
+  overflow: hidden;
+}
+.pagination .page-item .page-link{
+    padding: 5px 15px;
+    margin-right: 15px;
+    background: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    border-radius: 50px;
+    box-shadow: 0 8px 6px -9px #5b5f5f;
+    font-size: 17px;
+    color: #686c6c;
+}
+.pagination .page-item:first-child .page-link{ 
+  margin-right: 30px; 
+  border-radius: 50px 5px 5px 50px;
+}
+.pagination .page-item:last-child .page-link{ 
+  margin-left: 15px; 
+  border-radius: 5px 50px 50px 5px;
+}
+.pagination .page-item.active .page-link,
+.pagination .page-item .page-link:hover{
+    background: #85b83d;
+    border-color: #739d46;
+    color: #fff;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .agri-news-most-read .card-title a{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27px;
+  }
+}
+
+/* ===================== Agriculture News END ========================*/
+
+
+
+
+
+
+
+/* ===================== Subscription START ========================*/
+.subscription .form-control{
+  background: #D9D9D9;
+}
+.subscription .form-control:focus{
+  border-color: rgba(250, 151, 2, 0.77);
+  box-shadow: 0 0 3px rgba(250, 151, 2, 0.77);
+}
+.subscription .btn-warning{
+  background: rgba(250, 151, 2, 0.77);
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.9358px;
+  line-height: 29px;
+}
+@media screen and (min-width: 576px){
+  .subscription .text{
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .subscription .btn-warning{
+    font-size: 15px !important;
+  }
+}
+/* ===================== Subscription END ========================*/
+
+/* ===================== Footer STARt ========================*/
+.footer{
+  background: #90C88F;
+}
+.footer .company-name{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer .company-name span{
+  font-size: 32px;
+  font-weight: 700;
+}
+.footer .contact{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35.9358px;
+  line-height: 49px;
+  color: #FFFFFF;
+}
+.footer .contact-box{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  width: 75%;
+  padding: 25px 0;
+}
+.footer .contact-box i{
+  font-size: 23px;
+}
+.footer .copy-right{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.9358px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .footer .contact-box{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer .contact-box{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .footer .contact-box{
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .company-name{
+    width: 75%;
+  }
+}
+/* ===================== Footer END ========================*/
+
+
+
+
