@@ -7,6 +7,7 @@ import FisheryNewsPage from "./pages/FisheryNewsPage";
 import LivestockNewsPage from "./pages/LivestockNewsPage";
 import BuyerGuide from "./pages/BuyerGuide";
 import MagazinePage from "./pages/MagazinePage";
+import AdvertisePage from "./pages/AdvertisePage";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,11 @@ export const router = createBrowserRouter([
   {
     path: "/our-magazine",
     element: <MagazinePage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/advertise",
+    element: <AdvertisePage />,
     errorElement: <ErrorPage />,
   },
 ]);
