@@ -77,9 +77,7 @@ const AgriculturalNews = () => {
                 ))}
               </div>
             </div>
-            <div className="col-12">
-              <LeaderBoard />
-            </div>
+            <LeaderBoard />
           </div>
         </div>
         <div className="col-12 col-lg-2">
