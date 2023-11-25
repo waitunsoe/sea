@@ -9,6 +9,9 @@ import BuyerGuide from "./pages/BuyerGuide";
 import MagazinePage from "./pages/MagazinePage";
 import AdvertisePage from "./pages/AdvertisePage";
 import ContactPage from "./pages/ContactPage";
+import AgriNewsDetailPage from "./pages/AgriNewsDetailPage";
+import FisheryNewsDetailPage from "./pages/FisheryNewsDetailPage";
+import LivestockNewsDetailPage from "./pages/LivestockNewsDetailPage";
 
 export const router = createBrowserRouter([
   {
@@ -22,13 +25,28 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: "/agri-news/:id",
+    element: <AgriNewsDetailPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/fishery-news",
     element: <FisheryNewsPage />,
     errorElement: <ErrorPage />,
   },
   {
+    path: "/fishery-news/:id",
+    element: <FisheryNewsDetailPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/livestock-news",
     element: <LivestockNewsPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/livestock-news/:id",
+    element: <LivestockNewsDetailPage />,
     errorElement: <ErrorPage />,
   },
   {
