@@ -1,6 +1,6 @@
 import React from "react";
 
-const Banner = () => {
+const AdvertiseBanner = () => {
   return (
     <div className="bg-success opacity-75 text-white my-5">
       <div className="container px-0">
@@ -13,4 +13,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default AdvertiseBanner;

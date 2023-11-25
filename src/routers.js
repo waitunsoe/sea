@@ -8,6 +8,7 @@ import LivestockNewsPage from "./pages/LivestockNewsPage";
 import BuyerGuide from "./pages/BuyerGuide";
 import MagazinePage from "./pages/MagazinePage";
 import AdvertisePage from "./pages/AdvertisePage";
+import ContactPage from "./pages/ContactPage";
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +44,11 @@ export const router = createBrowserRouter([
   {
     path: "/advertise",
     element: <AdvertisePage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/contact",
+    element: <ContactPage />,
     errorElement: <ErrorPage />,
   },
 ]);

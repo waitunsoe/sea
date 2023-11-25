@@ -1,9 +1,9 @@
+import AdvertiseBanner from "../components/AdvertisePage/AdvertiseBanner";
 import AdvertiseContact from "../components/AdvertisePage/AdvertiseContact";
-import Banner from "../components/AdvertisePage/Banner";
 import Product from "../components/AdvertisePage/Product";
 import Header from "../components/Header/Header";
 import LeaderBoard from "../components/Partials/LeaderBoard";
-import Footer from "../components/footer/Footer"
+import Footer from "../components/footer/Footer";
 const AdvertisePage = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const AdvertisePage = () => {
       <div className="container">
         <h2 className="h2 fw-bold text-uppercase">Advertise with Us</h2>
       </div>
-      <Banner />
+      <AdvertiseBanner />
       <section className="container">
         <h3 className="text-uppercase mb-5">Products</h3>
         <div className="row">
@@ -24,7 +24,7 @@ const AdvertisePage = () => {
         </div>
         <AdvertiseContact />
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };
