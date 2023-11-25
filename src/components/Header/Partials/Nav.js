@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-
+  const [showModel, setShowModel] = useState(false);
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -34,74 +35,103 @@ const Nav = () => {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-between flex-grow-1 pe-3">
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link text-uppercase active"
                   aria-current="page"
-                  href="#"
+                  to={"/"}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link text-uppercase dropdown-toggle"
-                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  onClick={() => setShowModel(!showModel)}
                 >
                   News
                 </a>
-                <ul className="dropdown-menu">
+                <ul
+                  className={`dropdown-menu ${showModel? "d-block" : "d-none"} `}
+                >
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to={"/agri-news"}>
                       Agri News
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to={"/livestock-news"}>
                       Livestock News
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to={"/fishery-news"}>
                       Fishery News
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" aria-current="page" href="#">
+                <Link
+                  className="nav-link text-uppercase"
+                  aria-current="page"
+                  to={"/shows"}
+                >
                   Shows
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" aria-current="page" href="#">
+                <Link
+                  className="nav-link text-uppercase"
+                  aria-current="page"
+                  to={"/buyer-guide"}
+                >
                   Directory/Buyer's Guide
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" aria-current="page" href="#">
+                <Link
+                  className="nav-link text-uppercase"
+                  aria-current="page"
+                  to={"/our-magazine"}
+                >
                   Magazines
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" aria-current="page" href="#">
+                <Link
+                  className="nav-link text-uppercase"
+                  aria-current="page"
+                  to={"/advertise"}
+                >
                   Advertie
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" aria-current="page" href="#">
+                <Link
+                  className="nav-link text-uppercase"
+                  aria-current="page"
+                  to={"/contact"}
+                >
                   Contact
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" aria-current="page" href="#">
+                <Link
+                  className="nav-link text-uppercase"
+                  aria-current="page"
+                  to={"/about"}
+                >
                   Abouts
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-uppercase" aria-current="page" href="#">
+                <a
+                  className="nav-link text-uppercase"
+                  aria-current="page"
+                  href="#"
+                >
                   <i className="bi bi-search"></i>
                 </a>
               </li>
